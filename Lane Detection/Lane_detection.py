@@ -11,7 +11,7 @@ def canny(image):
 def roi(image):
     height = image.shape[0]
     polygons = np.array([
-    [(70, 330 ), (253, 73), (608, 310)]
+    [(70, 330), (253, 73), (608, 310)]
     ])
     mask = np.zeros_like(image)
     cv2.fillPoly(mask, polygons, 255)
